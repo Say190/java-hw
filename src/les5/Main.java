@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Object[][] matrix = new Object[10][10];
+        Object[][] matrix = new Object[10][10];// нужны объекты, цифры тоже, не только строки
 
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -56,7 +56,7 @@ public class Main {
             fullDiagonal[i + 10] = twoDiagonal[i];
         }
 
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); // StringBuilder быстрее, но не потокобезопасе.StringBuffer потокобезопасный, поэтому медленный. Нам сейчас потокобез не нужна
         Object[] roundedNum = new Object[20];
         int k = 0;
 
