@@ -5,21 +5,20 @@ public class Horse extends Animal {
     private int maxSpeed;
     public String name ;
 
-    Horse (String food, String location, int maxSpeed, String name ){
+    public Horse (String food, String location, int maxSpeed, String name ){
         super(food, location);
         this.maxSpeed = maxSpeed;
         this.name = name;
-
     }
 
     @Override
     public void makeNoise() {
-        System.out.println( name + "издает и го го");
+        System.out.println( name + " издает и го го");
     }
 
     @Override
     public void eat(String food) {
-        System.out.println( name + "ест" + getFood());
+        System.out.println( name + " ест " + food);
     }
 
     public int getMaxSpeed() {

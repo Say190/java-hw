@@ -5,25 +5,24 @@ public class Animal {
     private String food;
     private String location;
 
-    Animal() {
-
+    public Animal() {
     }
 
-    Animal(String food, String location) {
+    public Animal(String food, String location) {
         this.food = food;
         this.location = location;
     }
 
     public void makeNoise() {
-        System.out.println("Животное издает звук");
+        System.out.println("Животное издает звук ");
     }
 
     public void eat(String food) {
-        System.out.println( "Животное ест"+ food);
+        System.out.println("Животное ест "+ food);
     }
 
     public final void sleep() {
-        System.out.println( "Животное спит");
+        System.out.println("Животное спит ");
     }
 
     public String getFood() {
@@ -46,6 +45,4 @@ public class Animal {
     public String toString() {
         return "Animal [food=" + food + ", location=" + location + "]";
     }
-
-
 }

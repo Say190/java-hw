@@ -5,23 +5,21 @@ public class Cat extends Animal {
     private boolean isIndoor;
     public String name;
 
-    Cat (String food, String location, boolean isIndoor, String name ){
+    public Cat (String food, String location, boolean isIndoor, String name ){
         super(food, location);
         this.isIndoor = isIndoor;
         this.name = name;
-
     }
 
     @Override
     public void makeNoise() {
-        System.out.println( name + "издает мяу мяу");
+        System.out.println( name + " издает мяу мяу");
     }
 
     @Override
     public void eat(String food) {
-        System.out.println( name + "ест" + getFood());
+        System.out.println( name + " ест " + food);
     }
-
 
     public boolean isIndoor() {
         return isIndoor;
